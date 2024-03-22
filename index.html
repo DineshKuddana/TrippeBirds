@@ -1,325 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trippe Birds</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <div class="navbar">
-      <a href="#" class="navbar-brand"><img src="logo.jpg" /></a>
-      <div class="navbar-icons">
-        <a href="tel:+1234567890" title="Call us"
-          ><i class="fa-solid fa-phone"></i>+91 9910208407</a
-        >
-        <a href="tel:+19876543210" title="Call us"
-          ><i class="fa-brands fa-square-whatsapp"></i>+91 9910208773</a
-        >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trippe Birds</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+
+
+
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#" class="navbar-brand"><img src="logo.jpg" /></a>
+    <div class="navbar-icons">
+      <a href="tel:+1234567890" title="Call us"><i class="fa-solid fa-phone"></i>+91 9910208407</a>
+      <a href="tel:+19876543210" title="Call us"><i class="fa-brands fa-square-whatsapp"></i>+91 9910208773</a>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Banner -->
+  <section class="section">
+    <div class="overlay"></div>
+    <div class="section-content">
+      <h2>
+        DISCOVER DIVINE HEIGHTS, AFFORDABLE JOURNEYS: CHARDHAM BECKONS WITH
+        FRIEND TOUR TRAVELS!
+      </h2>
+      <button class="call-now-button">CALL NOW</button>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!--Details Section  -->
+
+  <div class="container">
+    <div class="details-section">
+      <h2>Please enter your details to get expert advice</h2>
+      <div class="input-group">
+        <input type="text" class="first" placeholder="First Name" />
+        <input type="text" class="last" placeholder="Last Name" />
+        <input type="email" class="email" placeholder="Email" class="email" />
+      </div>
+      <div class="input-group">
+        <input type="text" class="number" placeholder="Phone Number" />
+        <input type="text" class="city" placeholder="City" />
+        <button class="btn" onclick="sendwhatsapp();">Get Advice</button>
       </div>
     </div>
+  </div>
 
-    <!-- Banner -->
-    <section class="section">
-      <div class="overlay"></div>
-      <div class="section-content">
-        <h2>
-          DISCOVER DIVINE HEIGHTS, AFFORDABLE JOURNEYS: CHARDHAM BECKONS WITH
-          FRIEND TOUR TRAVELS!
-        </h2>
-        <button class="call-now-button">CALL NOW</button>
+
+
+
+
+
+
+  <!-- Profiles Section -->
+
+  <div class="whole">
+    <h2 class="whole-head">Our Packages</h2>
+    <div class="profiles-container">
+
+
+      <div class="profile-card">
+        <img src="https://friendstourchardham.com/images/tour_img1.webp" alt="Profile Image" />
+        <h3>John Doe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="background-text">Background Text</div>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <div class="one">
+          <button class="btn">Button</button>
+          <div class="text-row">Some Text</div>
+        </div>
       </div>
-    </section>
 
-    <!--Details Section  -->
 
-    <div class="container">
-      <div class="details-section">
-        <h2>Please enter your details to get expert advice</h2>
-        <div class="input-group">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email" class="email" />
-        </div>
-        <div class="input-group css">
-          <input type="text" placeholder="Phone Number" />
-          <input type="text" placeholder="City" />
-          <button class="btn">Get Advice</button>
+      <div class="profile-card">
+        <img src="https://friendstourchardham.com/images/tour_img1.webp" alt="Profile Image" />
+        <h3>John Doe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="background-text">Background Text</div>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <div class="one">
+          <button class="btn">Button</button>
+          <div class="text-row">Some Text</div>
         </div>
       </div>
-    </div>
 
-    <!-- Details Section -->
-
-    <div class="whole">
-      <h2 class="whole-head">Our Packages</h2>
-      <div class="profiles-container">
-        <!-- Card 1 -->
-        <div class="profile-card">
-          <img
-            src="https://friendstourchardham.com/images/tour_img1.webp"
-            alt="Profile Image"
-          />
-          <h3>John Doe</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="background-text">Background Text</div>
-          <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-          </ul>
-          <div class="one">
-            <button class="btn">Button</button>
-            <div class="text-row">Some Text</div>
-          </div>
+      <div class="profile-card">
+        <img src="https://friendstourchardham.com/images/tour_img1.webp" alt="Profile Image" />
+        <h3>John Doe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="background-text">Background Text</div>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <div class="one">
+          <button class="btn">Button</button>
+          <div class="text-row">Some Text</div>
         </div>
+      </div>
 
-        <!-- Card 2 -->
-
-        <div class="profile-card">
-          <img
-            src="https://friendstourchardham.com/images/tour_img1.webp"
-            alt="Profile Image"
-          />
-          <h3>John Doe</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="background-text">Background Text</div>
-          <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-          </ul>
-          <div class="one">
-            <button class="btn">Button</button>
-            <div class="text-row">Some Text</div>
-          </div>
+      <div class="profile-card">
+        <img src="https://friendstourchardham.com/images/tour_img1.webp" alt="Profile Image" />
+        <h3>John Doe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="background-text">Background Text</div>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <div class="one">
+          <button class="btn">Button</button>
+          <div class="text-row">Some Text</div>
         </div>
+      </div>
 
-        <div class="profile-card">
-          <img
-            src="https://friendstourchardham.com/images/tour_img1.webp"
-            alt="Profile Image"
-          />
-          <h3>John Doe</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="background-text">Background Text</div>
-          <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-          </ul>
-          <div class="one">
-            <button class="btn">Button</button>
-            <div class="text-row">Some Text</div>
-          </div>
+      <div class="profile-card">
+        <img src="https://friendstourchardham.com/images/tour_img1.webp" alt="Profile Image" />
+        <h3>John Doe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="background-text">Background Text</div>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <div class="one">
+          <button class="btn">Button</button>
+          <div class="text-row">Some Text</div>
         </div>
+      </div>
 
-        <div class="profile-card">
-          <img
-            src="https://friendstourchardham.com/images/tour_img1.webp"
-            alt="Profile Image"
-          />
-          <h3>John Doe</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="background-text">Background Text</div>
-          <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-          </ul>
-          <div class="one">
-            <button class="btn">Button</button>
-            <div class="text-row">Some Text</div>
-          </div>
+      <div class="profile-card">
+        <img src="https://friendstourchardham.com/images/tour_img1.webp" alt="Profile Image" />
+        <h3>John Doe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="background-text">Background Text</div>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <div class="one">
+          <button class="btn">Button</button>
+          <div class="text-row">Some Text</div>
         </div>
+      </div>
 
-        <div class="profile-card">
-          <img
-            src="https://friendstourchardham.com/images/tour_img1.webp"
-            alt="Profile Image"
-          />
-          <h3>John Doe</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="background-text">Background Text</div>
-          <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-          </ul>
-          <div class="one">
-            <button class="btn">Button</button>
-            <div class="text-row">Some Text</div>
-          </div>
+      <div class="profile-card">
+        <img src="https://friendstourchardham.com/images/tour_img1.webp" alt="Profile Image" />
+        <h3>John Doe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="background-text">Background Text</div>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <div class="one">
+          <button class="btn">Button</button>
+          <div class="text-row">Some Text</div>
         </div>
+      </div>
 
-        <div class="profile-card">
-          <img
-            src="https://friendstourchardham.com/images/tour_img1.webp"
-            alt="Profile Image"
-          />
-          <h3>John Doe</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="background-text">Background Text</div>
-          <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-          </ul>
-          <div class="one">
-            <button class="btn">Button</button>
-            <div class="text-row">Some Text</div>
-          </div>
+      <div class="profile-card">
+        <img src="https://friendstourchardham.com/images/tour_img1.webp" alt="Profile Image" />
+        <h3>John Doe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="background-text">Background Text</div>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <div class="one">
+          <button class="btn">Button</button>
+          <div class="text-row">Some Text</div>
         </div>
+      </div>
 
-        <div class="profile-card">
-          <img
-            src="https://friendstourchardham.com/images/tour_img1.webp"
-            alt="Profile Image"
-          />
-          <h3>John Doe</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="background-text">Background Text</div>
-          <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-          </ul>
-          <div class="one">
-            <button class="btn">Button</button>
-            <div class="text-row">Some Text</div>
-          </div>
-        </div>
-
-        <div class="profile-card">
-          <img
-            src="https://friendstourchardham.com/images/tour_img1.webp"
-            alt="Profile Image"
-          />
-          <h3>John Doe</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="background-text">Background Text</div>
-          <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-          </ul>
-          <div class="one">
-            <button class="btn">Button</button>
-            <div class="text-row">Some Text</div>
-          </div>
-        </div>
-
-        <div class="profile-card">
-          <img
-            src="https://friendstourchardham.com/images/tour_img1.webp"
-            alt="Profile Image"
-          />
-          <h3>John Doe</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="background-text">Background Text</div>
-          <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-          </ul>
-          <div class="one">
-            <button class="btn">Button</button>
-            <div class="text-row">Some Text</div>
-          </div>
+      <div class="profile-card">
+        <img src="https://friendstourchardham.com/images/tour_img1.webp" alt="Profile Image" />
+        <h3>John Doe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="background-text">Background Text</div>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+        <div class="one">
+          <button class="btn">Button</button>
+          <div class="text-row">Some Text</div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Info Section -->
 
-    <div class="info-container">
-      <div class="left-section">
-        <img src="info.webp" alt="Divine Journeys Image" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Info Section -->
+
+  <div class="info-container">
+    <div class="left-section">
+      <img src="info.webp" alt="Divine Journeys Image" />
+    </div>
+    <div class="right-section">
+      <h2>Discover Divine Journeys with Friend Tour Travels</h2>
+      <p>
+        Welcome to Friend Tour Travels, your gateway to spiritual exploration!
+        Embark on a transformative journey with our affordable Chardham
+        packages. Nestled in the serene Himalayas, the Chardham circuit
+        comprises four sacred sites—Yamunotri, Gangotri, Kedarnath, and
+        Badrinath—each holding profound significance in Hindu mythology.
+      </p>
+      <p>
+        At Friend Tour Travels, we ensure a seamless pilgrimage experience,
+        catering to your spiritual needs while offering comfort and
+        convenience at every step. Our expertly crafted packages encompass
+        accommodation, transportation, and guided tours, allowing you to focus
+        solely on your spiritual quest.
+      </p>
+      <p>
+        With our commitment to excellence and customer satisfaction, we strive
+        to make your Chardham yatra a memorable and fulfilling journey.
+        Whether you seek spiritual enlightenment or simply wish to explore the
+        beauty of the Himalayas, let Friend Tour Travels be your trusted
+        companion on this sacred adventure. Discover the essence of devotion
+        with our affordable Chardham packages today!
+      </p>
+
+      <button class="btn"><i class="fa-solid fa-phone"></i>&nbsp;+91 99102 08407</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Contact Section -->
+
+  <div class="full">
+    <div class="contact-container">
+      <div class="footer-item about">
+        <h3>About Us</h3>
+        <p>Friends tour travels is the largest Outstation Taxi, Tempo Traveller and car Rental Service Provider In New
+          Delhi. Indian Travel Online Offers The Cheapest Taxi, Tempo Traveller Booking & Car Rental Services Book On a
+          Phone Call. Book a Taxi from Delhi for one-way, Round Trip and Car Tour Packages. Delhi Taxi, Tempo Traveller,
+          Mini Bus & Cab Service Is Available 24x7 with Full-Time Customer Support.</p>
       </div>
-      <div class="right-section">
-        <h2>Discover Divine Journeys with Friend Tour Travels</h2>
+      <div class="footer-item contact">
+        <h3>Contact Us</h3>
+        <p>Utsav Residency, Pocket-3. Gate No.1, Flat No. A/2,21, Sector-34, Rohini, Delhi-110039</p>
+        <p><i class="fa-solid fa-phone"></i>&nbsp;+91 9910208407</p>
+        <p><i class="fa-brands fa-whatsapp"></i>&nbsp;+91 9910208773</p>
+        <p><i class="fa-solid fa-envelope"></i>&nbsp;friendstourtravel123@gmail.com</p>
+      </div>
+      <div class="footer-item quote">
+        <h3>Get a Quote</h3>
+        <div class="quote-container">
+          <form action="">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <textarea placeholder="Message"></textarea>
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <div class="footer-full">
+    <div class="footer">
+      <div class="copyright">
         <p>
-          Welcome to Friend Tour Travels, your gateway to spiritual exploration!
-          Embark on a transformative journey with our affordable Chardham
-          packages. Nestled in the serene Himalayas, the Chardham circuit
-          comprises four sacred sites—Yamunotri, Gangotri, Kedarnath, and
-          Badrinath—each holding profound significance in Hindu mythology.
+          © Copyright 2024, www.friendstourchardham.com All Rights Reserved.
         </p>
-        <p>
-          At Friend Tour Travels, we ensure a seamless pilgrimage experience,
-          catering to your spiritual needs while offering comfort and
-          convenience at every step. Our expertly crafted packages encompass
-          accommodation, transportation, and guided tours, allowing you to focus
-          solely on your spiritual quest.
-        </p>
-        <p>
-          With our commitment to excellence and customer satisfaction, we strive
-          to make your Chardham yatra a memorable and fulfilling journey.
-          Whether you seek spiritual enlightenment or simply wish to explore the
-          beauty of the Himalayas, let Friend Tour Travels be your trusted
-          companion on this sacred adventure. Discover the essence of devotion
-          with our affordable Chardham packages today!
-        </p>
-
-        <button class="btn btnn">+91 99102 08407</button>
+      </div>
+      <div class="credit">
+        <p>Design & Developed by <span>ANG Webworks Pvt Ltd.</span></p>
       </div>
     </div>
+  </div>
 
-    <!-- Contact Section -->
 
-    <div class="full">
-      <div class="contact-container">
-        <div class="footer-item">
-          <h3>About Us</h3>
-          <p>
-            Friends tour travels is the largest Outstation Taxi, Tempo Traveller
-            and car Rental Service Provider In New Delhi. Indian Travel Online
-            Offers The Cheapest Taxi, Tempo Traveller Booking & Car Rental
-            Services Book On a Phone Call. Book a Taxi from Delhi for one-way,
-            Round Trip and Car Tour Packages. Delhi Taxi, Tempo Traveller, Mini
-            Bus & Cab Service Is Available 24x7 with Full-Time Customer Support.
-          </p>
-        </div>
-        <div class="footer-item">
-          <h3>Contact Us</h3>
-          <p>
-            Utsav Residency, Pocket-3. Gate No.1, Flat No. A/2,21, Sector-34,
-            Rohini, Delhi-110039
-          </p>
-          <p>+91 9910208407</p>
-          <p>+91 9910208773</p>
-          <p>friendstourtravel123@gmail.com</p>
-        </div>
-        <div class="footer-item">
-          <h3>Get a Quote</h3>
-          <div class="quote-container">
-            <form action="">
-              <input type="text" placeholder="Name" required />
-              <input type="email" placeholder="Email" required />
-              <input type="tel" placeholder="Phone" required />
-              <textarea placeholder="Message"></textarea>
-              <button>Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Footer -->
-    <div class="footer-full">
-      <div class="footer">
-        <div class="copyright">
-          <p>
-            © Copyright 2024, www.friendstourchardham.com All Rights Reserved.
-          </p>
-        </div>
-        <div class="credit">
-          <p>Design & Developed by <span>ANG Webworks Pvt Ltd.</span></p>
-        </div>
-      </div>
-    </div>
-  </body>
+
+
+  <!-- Whatsapp Icon -->
+
+
+
+  <a href="https://wa.me/yourphonenumber" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
+
+
+
+
+  <script src="index.js"></script>
+</body>
+
 </html>
