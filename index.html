@@ -309,12 +309,12 @@
       <div class="footer-item quote">
         <h3>Get a Quote</h3>
         <div class="quote-container">
-          <form action="">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Phone" required>
-            <textarea placeholder="Message"></textarea>
-            <button>Submit</button>
+          <form  id="trip-form" action="/post" method="POST">
+            <input type="text" placeholder="Name" for = "name" name = "name" required>
+            <input type="email" placeholder="Email" for = "email" name="email" required>
+            <input type="tel" placeholder="Phone" for = "mobile" name = "mobile" required>
+            <textarea placeholder="Message" for = "message" name="message"></textarea>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
@@ -359,6 +359,31 @@
 
 
   <script src="index.js"></script>
+  <script>
+    document.getElementById('trip-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+      const data = {
+          name: formData.get('name'),
+          email: formData.get('email'),
+          mobile: formData.get('mobile'),
+          message: formData.get('message'),
+      };
+  
+      fetch('/post', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+      })
+      .then(response => response.text())
+      .then(message => {
+          alert(message);
+          event.target.reset();
+      });
+  });
+  </script>
 </body>
 
 </html>

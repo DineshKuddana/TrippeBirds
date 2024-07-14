@@ -5,17 +5,16 @@ function sendwhatsapp() {
     var number = document.querySelector('.number').value;
 
     if (first && last && email && number) {
-        var phonenumber = '+917801011369';
         var city = document.querySelector('.city').value || "Not provided";
 
-        var message = 
+        var message =
             "Name: " + first + " " + last + "\n" +
             "Email: " + email + "\n" +
             "Contact: " + number + "\n" +
-            "City: " + city ;
+            "City: " + city;
 
         var encodedMessage = encodeURIComponent(message);
-        var url = 'https://wa.me/' + phonenumber + '?text=' + encodedMessage;
+        var url = 'https://wa.me/+917801011369?text=' + encodedMessage;
 
         // Open WhatsApp in the same window/tab with the pre-filled message
         window.location.href = url;
