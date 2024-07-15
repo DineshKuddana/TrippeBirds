@@ -22,3 +22,8 @@ function sendwhatsapp() {
         alert("Please fill in all required fields.");
     }
 }
+
+
+function abc(){
+    alert("Fill the below form to get more updates from us");
+}
